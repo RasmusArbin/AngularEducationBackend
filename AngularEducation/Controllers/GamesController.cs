@@ -19,12 +19,20 @@ namespace AngularEducation.Controllers
             return AngularEducationUnitOfWorkProvider.UnitOfWork.ReadStatement(p => p.GamePlayerService.ReadQuery(p.GamePlayerService.GetAll()).Select(x => new GameModel(x)));
         }
 
-        public void Insert(GameModel gameModel)
+        [HttpGet]
+        public void Insert(string name)
         {
-            AngularEducationUnitOfWorkProvider.UnitOfWork.ExcecuteStatement(p => p.GamePlayerService.Insert(new tblGame()
+            try {
+                AngularEducationUnitOfWorkProvider.UnitOfWork.ExcecuteStatement(p =>
+                p.GamePlayerService.Insert(new tblGame()
+                {
+                    Name = name
+                }));
+            }
+            catch (Exception e)
             {
-                Name = gameModel.Name
-            }));
+
+            }
         }
     }
 }

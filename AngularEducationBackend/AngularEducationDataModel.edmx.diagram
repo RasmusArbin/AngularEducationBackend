@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="d025d0924338456d96a3c233fd97e200" Name="Diagram1">
-        <EntityTypeShape EntityType="AngularEducationGamesModel.tblGame" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AngularEducationGamesModel.tblGame" Width="1.5" PointX="0.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
