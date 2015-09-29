@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace AngularEducation.Models
 {
-    [Serializable]
     public class GameModel
     {
         public string Name { get; set; }

@@ -6,9 +6,11 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using AngularEducationBackend;
+using System.Web.Http.Cors;
 
 namespace AngularEducation.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class GamesController : AngularEducationController
     {
         [HttpGet]
