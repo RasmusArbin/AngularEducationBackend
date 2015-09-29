@@ -79,6 +79,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\AngularEducationRepositoryProvider.cs" />
     <Compile Include="Providers\AngularEducationServiceProvider.cs" />
+    <Compile Include="Providers\AngularEducationUnitOfWorkProvider.cs" />
     <Compile Include="Repositories\AngularEducationRepository.cs" />
     <Compile Include="Services\AngularEducationService.cs" />
     <Compile Include="tblGame.cs">
